@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo ao LayoutApp!"
+        android:textColor="#4CAF50"
+        android:textSize="26sp"  <!-- Cor verde para o título -->
+    android:layout_marginBottom="32dp"
+    android:gravity="center"
+    android:fontFamily="sans-serif-medium" />
+
+    <!-- Campo de entrada -->
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite algo"
+        android:minHeight="48dp"
+        android:textColor="#000000" />  <!-- Cor do texto do campo de entrada -->
+    android:hintTextColor="#757575"  <!-- Cor do texto de dica -->
+    android:background="@android:color/white"
+    android:layout_marginBottom="24dp"
+    android:padding="10dp"
+    android:textSize="16sp" />
+
+    <!-- Botão -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:cornerRadius="8dp" />
+
+</LinearLayout>

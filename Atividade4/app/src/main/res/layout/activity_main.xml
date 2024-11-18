@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Imagem de Perfil -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Foto de perfil"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Vitor Loula Silva"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Desenvolvedor de Software apaixonado por tecnologias mobile e automobilismo."
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="16sp" />
+
+    <!-- Emprego Atual -->
+    <TextView
+        android:id="@+id/current_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Emprego Atual: Desenvolvedor de Software"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="18sp" />
+
+    <!-- Lista de Experiências -->
+    <TextView
+        android:id="@+id/experience_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Experiências Anteriores:"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/experience_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Empresa XYZ - Desenvolvedor Jr. (2018-2020)"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Empresa ABC - Estagiário em Desenvolvimento (2017-2018)"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
